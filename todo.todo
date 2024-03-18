@@ -1,0 +1,16 @@
+✔ Gridi çiz @done(24-03-17 14:50)
+- Tek kişilik oyun şeklinde çalışmasını sağla
+	✔ Snake çizilecek @done(24-03-17 15:24)
+	✔ Haraketinin sağlanması @done(24-03-17 16:24)
+	✔ Klavye tuşlarıyla kontrol @done(24-03-17 16:24)
+	✔ Engel ve yiyecekler eklenecek 
+	- Engeller ve yiyecekler üst üste gelmemeli
+	- Engeller ile çarpışma tet edilmeli
+	- Yılanın kendi içinde çarpışığ çarpışmadığı kontrol edilmeli
+	@done(24-03-17 19:18)
+- 
+- Birden fazla oyuncu desteği
+- Skor tablosu
+- Skorların browserda tutulması
+- 
+- 

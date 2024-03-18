@@ -1,0 +1,157 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --cellSize: 25px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+#game-grid {
+	height: 701px;
+	width: 701px;
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+	background-size: 25px 25px; /* Adjust the size of the grid squares */
+	background-color: #f9f9f9; /* Background color for the squared paper */
+	height: 'max-content';
+	position: relative;
+
+}
+
+.barrier-cell {
+	display: inline-block;
+	position: absolute;
+	width: var(--cellSize);
+	height: var(--cellSize);
+	background-size: contain;
+}
+
+.barrier-image1 {
+	background-image: url(./stone.png);
+}
+
+.barrier-image2 {
+	background-image: url(https://media.istockphoto.com/id/1336308624/tr/vekt%C3%B6r/grass-stone-seamless-pattern-vector-rock-lawn-texture-game-ground-square-tile-green-moss.jpg?s=612x612&w=0&k=20&c=IHumxLbCsOqfw0GmGRByfMhw4ItP08tqLRNEUus8S8M=);
+}
+
+.food-image1 {
+	background-image: url(./carrot.png);
+	background-size: 20px;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+}
+
+.food-image2 {
+	background-image: url(./cherry.png);
+	background-size: 20px;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+}
+
+.food-image3 {
+	background-image: url(./melon.png);
+	background-size: 20px;
+	background-position: 2px 2px;
+	background-repeat: no-repeat;
+}
+
+
+.snake-cell {
+	display: inline-block;
+	position: absolute;
+	width: var(--cellSize);
+	height: var(--cellSize);
+
+}
